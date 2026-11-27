@@ -1,6 +1,6 @@
 # Cardigen
 
-<img src="logo.svg" alt="Cardigen logo: eight cards on a landscape sheet spelling Cardigen" width="720">
+<img src="logo.svg" alt="Cardigen logo: eight cards on a landscape sheet spelling Cardigen" width="475" align="left">
 
 Cardigen is a lightweight, privacy-first tool for making copies of cards that
 can be printed, cut out, and laminated. Everything runs locally in the browser:
@@ -21,6 +21,10 @@ Replace `cardigen-config.js` to use Cardigen for another kind of card. Set
 `documentTitle` there when the browser-tab title should differ from the visible
 page title. Set `textColor` and `backgroundColor` to CSS colors for the card
 text and card background. Omitted values use black text on a white background.
+
+<br clear="left">
+
+<img src="screenshot.png" alt="Default view of Cardigen: an emergency-contact card beside a meeting-places card">
 
 Open `index.html` from a local web server in Chrome or Edge.
 
