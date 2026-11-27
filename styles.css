@@ -29,20 +29,25 @@ button {
   color: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .app-shell {
   width: min(100% - 2rem, 62rem);
   margin: 0 auto;
   padding: 2rem 0 3rem;
 }
 
-.app-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
 .app-header p {
   max-width: 46rem;
-  margin: 0.6rem 0 0;
+  margin: 0;
   line-height: 1.5;
 }
 
@@ -250,6 +255,12 @@ button {
 .print-panel p {
   margin: 0.65rem 0 1rem;
   line-height: 1.5;
+}
+
+.cardigen-credit {
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 #print-root {
