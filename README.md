@@ -15,7 +15,9 @@ Version 1 provides:
 
 The included example is a generic emergency-contact card. It shows how a site
 can supply editable default text without sending what users type anywhere.
-Replace `cardigen-config.js` to use Cardigen for another kind of card.
+Replace `cardigen-config.js` to use Cardigen for another kind of card. Set
+`documentTitle` there when the browser-tab title should differ from the visible
+page title.
 
 Open `index.html` from a local web server in Chrome or Edge.
 

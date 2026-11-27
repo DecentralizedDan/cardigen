@@ -315,7 +315,7 @@ body.cardigen-standalone {
   }
 
   header,
-  .app-shell,
+  .cardigen-root,
   body > footer {
     display: none !important;
   }

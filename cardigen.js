@@ -25,7 +25,8 @@
   let savedRange = null;
   let overflowFrame = null;
 
-  document.title = `${config.pageTitle || "Cardigen"} — Cardigen`;
+  document.title =
+    config.documentTitle || `${config.pageTitle || "Cardigen"} — Cardigen`;
   document.getElementById("page-title").textContent =
     config.pageTitle || "Cardigen";
 
