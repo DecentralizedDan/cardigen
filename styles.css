@@ -269,6 +269,10 @@ body.cardigen-standalone {
 }
 
 .cardigen-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
   margin-top: 2rem;
   padding: 0;
   border: 0;
@@ -276,6 +280,12 @@ body.cardigen-standalone {
   opacity: 1;
   font-size: 1rem;
   text-align: center;
+}
+
+.cardigen-mark {
+  display: block;
+  height: 1rem;
+  width: auto;
 }
 
 .cardigen-credit a {

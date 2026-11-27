@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8.5" width="1100" height="850" role="img" aria-labelledby="title">
+  <title id="title">Cardigen logo</title>
+  <rect width="11" height="8.5" fill="#fff"/>
+  <rect x="0.02" y="0.02" width="10.96" height="8.46" fill="none" stroke="#171717" stroke-width="0.04"/>
+  <g fill="#fff" stroke="#171717" stroke-width="0.025" font-family="Helvetica, Arial, sans-serif" font-size="1.55" font-weight="700" text-anchor="middle">
+    <rect x="1" y="0.55" width="2.25" height="3.7"/>
+    <rect x="3.25" y="0.55" width="2.25" height="3.7"/>
+    <rect x="5.5" y="0.55" width="2.25" height="3.7"/>
+    <rect x="7.75" y="0.55" width="2.25" height="3.7"/>
+    <rect x="1" y="4.25" width="2.25" height="3.7"/>
+    <rect x="3.25" y="4.25" width="2.25" height="3.7"/>
+    <rect x="5.5" y="4.25" width="2.25" height="3.7"/>
+    <rect x="7.75" y="4.25" width="2.25" height="3.7"/>
+    <g fill="#171717" stroke="none">
+      <text x="2.125" y="2.4" dominant-baseline="central">C</text>
+      <text x="4.375" y="2.4" dominant-baseline="central">a</text>
+      <text x="6.625" y="2.4" dominant-baseline="central">r</text>
+      <text x="8.875" y="2.4" dominant-baseline="central">d</text>
+      <text x="2.125" y="6.1" dominant-baseline="central">i</text>
+      <text x="4.375" y="6.1" dominant-baseline="central">g</text>
+      <text x="6.625" y="6.1" dominant-baseline="central">e</text>
+      <text x="8.875" y="6.1" dominant-baseline="central">n</text>
+    </g>
+  </g>
+</svg>

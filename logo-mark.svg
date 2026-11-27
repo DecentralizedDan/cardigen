@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8.5" fill="none" role="img" aria-label="Cardigen">
+  <rect width="11" height="8.5" fill="#fff"/>
+  <g stroke="#171717" stroke-width="1.25" vector-effect="non-scaling-stroke">
+    <rect x="0.08" y="0.08" width="10.84" height="8.34"/>
+    <rect x="1" y="0.55" width="9" height="7.4"/>
+    <path d="M3.25 0.55V7.95 M5.5 0.55V7.95 M7.75 0.55V7.95 M1 4.25H10"/>
+  </g>
+</svg>
