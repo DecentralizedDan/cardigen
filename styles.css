@@ -34,10 +34,15 @@ body.cardigen-standalone {
   color: inherit;
 }
 
-.cardigen-root h1,
 .cardigen-root h2 {
   color: var(--ink);
   opacity: 1;
+}
+
+body.cardigen-standalone .cardigen-root h1 {
+  color: var(--ink);
+  opacity: 1;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .cardigen-root header {
@@ -48,6 +53,9 @@ body.cardigen-standalone {
   padding: 0;
   border: 0;
   background: #fff;
+}
+
+body.cardigen-standalone .cardigen-root header {
   text-align: left;
 }
 
@@ -59,6 +67,9 @@ body.cardigen-standalone {
 
 .app-header h1 {
   margin: 0;
+}
+
+body.cardigen-standalone .app-header h1 {
   font-size: 2rem;
 }
 
