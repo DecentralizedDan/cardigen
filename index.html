@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <meta
+      name="description"
+      content="Create printable, double-sided cards without sending your text anywhere."
+    />
+    <title>Cardigen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="cardigen-config.js" defer></script>
+    <script src="cardigen.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <h1>Cardigen</h1>
+        <p>
+          Edit one or both cards below. Cardigen repeats each side eight times
+          on a landscape Letter sheet.
+        </p>
+      </header>
+
+      <section class="controls" aria-label="Card formatting and print options">
+        <div class="toolbar" role="toolbar" aria-label="Text formatting">
+          <button type="button" class="format-button" data-command="bold" aria-label="Bold">
+            <strong>B</strong>
+          </button>
+          <button type="button" class="format-button" data-command="italic" aria-label="Italic">
+            <em>I</em>
+          </button>
+          <span class="toolbar-divider" aria-hidden="true"></span>
+          <button
+            type="button"
+            class="format-button alignment-button"
+            data-command="justifyLeft"
+            aria-label="Align paragraph left"
+            title="Align paragraph left"
+          >
+            ≡
+          </button>
+          <button
+            type="button"
+            class="format-button alignment-button alignment-center"
+            data-command="justifyCenter"
+            aria-label="Center paragraph"
+            title="Center paragraph"
+          >
+            ≡
+          </button>
+          <button
+            type="button"
+            class="format-button alignment-button alignment-right"
+            data-command="justifyRight"
+            aria-label="Align paragraph right"
+            title="Align paragraph right"
+          >
+            ≡
+          </button>
+        </div>
+
+        <label class="duplex-control">
+          <input id="double-sided" type="checkbox" checked />
+          Double sided
+        </label>
+      </section>
+
+      <section class="editors" aria-label="Card sides">
+        <div class="editor-column">
+          <div
+            id="side-1"
+            class="card-editor"
+            contenteditable="true"
+            role="textbox"
+            aria-multiline="true"
+            aria-label="First card side"
+            spellcheck="true"
+          ></div>
+          <p id="side-1-warning" class="overflow-warning" role="status" hidden>
+            This side has more text than the printed card can hold. Extra text
+            will be clipped.
+          </p>
+          <button type="button" class="restore-button" data-side="1">
+            Restore defaults
+          </button>
+        </div>
+
+        <div id="side-2-column" class="editor-column">
+          <div
+            id="side-2"
+            class="card-editor"
+            contenteditable="true"
+            role="textbox"
+            aria-multiline="true"
+            aria-label="Second card side"
+            spellcheck="true"
+          ></div>
+          <p id="side-2-warning" class="overflow-warning" role="status" hidden>
+            This side has more text than the printed card can hold. Extra text
+            will be clipped.
+          </p>
+          <button type="button" class="restore-button" data-side="2">
+            Restore defaults
+          </button>
+        </div>
+      </section>
+
+      <section class="print-panel" aria-labelledby="print-heading">
+        <h2 id="print-heading">Print Or Save As PDF</h2>
+        <p>
+          In Chromium’s print dialog, use Letter paper, landscape orientation,
+          100% scale, no margins, and no headers or footers. For two-sided
+          printing, flip on the short edge. To download a PDF, choose
+          <strong>Save as PDF</strong> as the printer.
+        </p>
+        <button id="print-button" type="button" class="primary-button">
+          Print or save as PDF
+        </button>
+      </section>
+    </main>
+
+    <div id="print-root" aria-hidden="true"></div>
+  </body>
+</html>
