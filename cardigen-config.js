@@ -1,5 +1,7 @@
 window.CARDIGEN_CONFIG = {
   pageTitle: "Make Emergency Contact Cards",
+  textColor: "#000000",
+  backgroundColor: "#ffffff",
   sideDefaults: [
     `
       <div style="text-align: center;"><strong style="--size: 1.2">Emergency Contact</strong></div>

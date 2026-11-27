@@ -38,6 +38,11 @@
   let typefaceIndex = 0;
   const fontButton = document.getElementById("font-button");
 
+  const textColor = cssColor(config.textColor, "#000000");
+  const backgroundColor = cssColor(config.backgroundColor, "#ffffff");
+  document.documentElement.style.setProperty("--card-text", textColor);
+  document.documentElement.style.setProperty("--card-background", backgroundColor);
+
   document.title =
     config.documentTitle || `${config.pageTitle || "Cardigen"} — Cardigen`;
   document.getElementById("page-title").textContent =
@@ -124,6 +129,15 @@
   scheduleOverflowCheck();
   updateFontSizeButtons();
   applyTypeface(0);
+
+  function cssColor(value, fallback) {
+    if (typeof value !== "string") return fallback;
+    const candidate = value.trim();
+    if (!candidate) return fallback;
+    const probe = document.createElement("span");
+    probe.style.color = candidate;
+    return probe.style.color ? candidate : fallback;
+  }
 
   function applyTypeface(index) {
     const [name, family] = TYPEFACES[index];

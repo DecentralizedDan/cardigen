@@ -41,7 +41,13 @@ body.cardigen-standalone {
 }
 
 .cardigen-root header {
-  margin-bottom: 0;
+  position: static;
+  top: auto;
+  z-index: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #fff;
   text-align: left;
 }
 
@@ -229,8 +235,9 @@ body.cardigen-standalone {
   height: calc(3.7in * var(--preview-scale));
   overflow: hidden;
   padding: calc(0.09in * var(--preview-scale));
-  border: 1pt solid var(--line);
-  background: #fff;
+  border: 1pt solid var(--card-text, var(--line));
+  color: var(--card-text, #000000);
+  background: var(--card-background, #ffffff);
   font-family: var(--font, Helvetica, Arial, sans-serif);
   font-size: calc(10pt * var(--preview-scale));
   line-height: 1.2;
@@ -301,7 +308,7 @@ body.cardigen-standalone {
   cursor: not-allowed;
 }
 
-.primary-button {
+.cardigen-root .primary-button {
   border-color: #111;
   color: #fff;
   background: #111;
@@ -428,9 +435,10 @@ body.cardigen-standalone {
     height: 3.7in;
     overflow: hidden;
     padding: 0.09in;
-    border-top: 1pt solid var(--line);
-    border-left: 1pt solid var(--line);
-    background: #fff;
+    border-top: 1pt solid var(--card-text, var(--line));
+    border-left: 1pt solid var(--card-text, var(--line));
+    color: var(--card-text, #000000);
+    background: var(--card-background, #ffffff);
     font-family: var(--font, Helvetica, Arial, sans-serif);
     font-size: 10pt;
     line-height: 1.2;
@@ -438,11 +446,11 @@ body.cardigen-standalone {
   }
 
   .print-card:nth-child(4n) {
-    border-right: 1pt solid var(--line);
+    border-right: 1pt solid var(--card-text, var(--line));
   }
 
   .print-card:nth-child(n + 5) {
-    border-bottom: 1pt solid var(--line);
+    border-bottom: 1pt solid var(--card-text, var(--line));
   }
 
   .print-content {
