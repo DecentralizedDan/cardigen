@@ -13,8 +13,11 @@ Version 1 provides:
 - Browser printing, including the option to save the output as a PDF
 - Configurable default text and organization branding
 
-Open `index.html` from a local web server in Chrome or Edge. To customize the
-default card, edit `cardigen-config.js`.
+The included example is a generic emergency-contact card. It shows how a site
+can supply editable default text without sending what users type anywhere.
+Replace `cardigen-config.js` to use Cardigen for another kind of card.
+
+Open `index.html` from a local web server in Chrome or Edge.
 
 Cardigen is available under the MIT License.
 

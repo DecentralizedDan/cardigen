@@ -14,19 +14,29 @@
   box-sizing: border-box;
 }
 
-body {
+body.cardigen-standalone {
   margin: 0;
-  color: var(--ink);
   background: #fff;
 }
 
-button,
-input {
+.cardigen-root {
+  color: var(--ink);
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.cardigen-root button,
+.cardigen-root input {
   font: inherit;
 }
 
-button {
+.cardigen-root button {
   color: inherit;
+}
+
+.cardigen-root h1 {
+  color: var(--ink);
+  opacity: 1;
 }
 
 .app-shell {
@@ -254,8 +264,16 @@ button {
 
 .cardigen-credit {
   margin-top: 2rem;
+  padding: 0;
+  border: 0;
+  color: var(--ink);
+  opacity: 1;
   font-size: 1rem;
   text-align: center;
+}
+
+.cardigen-credit a {
+  color: var(--focus);
 }
 
 #print-root {
@@ -290,11 +308,15 @@ button {
   }
 
   body {
+    max-width: none !important;
     margin: 0;
+    padding: 0 !important;
     background: #fff;
   }
 
-  .app-shell {
+  header,
+  .app-shell,
+  body > footer {
     display: none !important;
   }
 
