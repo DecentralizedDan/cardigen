@@ -26,6 +26,8 @@
   let overflowFrame = null;
 
   document.title = `${config.pageTitle || "Cardigen"} — Cardigen`;
+  document.getElementById("page-title").textContent =
+    config.pageTitle || "Cardigen";
 
   editors.forEach((editor, index) => {
     editor.innerHTML = config.sideDefaults[index].trim();
