@@ -1,6 +1,6 @@
 # Cardigen
 
-<img src="logo.svg" alt="Cardigen logo: eight cards on a landscape sheet spelling Cardigen" width="475" align="left">
+<img src="logo.svg" alt="Cardigen logo: eight cards on a landscape sheet spelling Cardigen" width="370" align="left">
 
 Cardigen is a lightweight, privacy-first tool for making copies of cards that
 can be printed, cut out, and laminated. Everything runs locally in the browser:
