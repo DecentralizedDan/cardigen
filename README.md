@@ -6,7 +6,7 @@ there are no accounts, uploads, analytics, or external dependencies.
 
 Version 1 provides:
 
-- Two editable card sides with simple bold, italic, underline, and paragraph-alignment controls
+- Two editable card sides with simple bold, italic, underline, font-size, font, and paragraph-alignment controls
 - Eight identical 2.25 × 3.7-inch cards on each landscape Letter page
 - Optional double-sided output
 - One-point cutting borders and overflow warnings
